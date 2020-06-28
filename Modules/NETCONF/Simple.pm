@@ -170,7 +170,7 @@ sub xml_from_mt_template
 	my ( $self, $file , $var ) = @_;
 	my $mt = Mojo::Template->new(vars => 1);
 	my $xml = $mt->render_file($file , { 
-		message_id => $self->{"message_id"}++,
+		message_id => $self->get_message_id(),
 		data => $var,
 		} );
 	eval 
@@ -182,6 +182,11 @@ sub xml_from_mt_template
 		croak "#########\nError in xml\n#########\n$xml\n\n####XML ERROR######\n$EVAL_ERROR\n";
 	}
 	return $xml;
+}
+sub get_message_id
+{
+	my ( $self ) = @_;
+	return $self->{"message_id"}++;
 }
 sub capabilities
 {
