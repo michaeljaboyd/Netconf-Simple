@@ -14,7 +14,7 @@ Templates do not have to be used. Modules such as XML::Writer can also be used.
 # Methods
 
 ## new
-COnnect to host, create a NETCONF:Simple object, and return the referance 
+Connect to host, create a NETCONF:Simple object, and return the object referance 
   ```
   my $conn = NETCONF::Simple->new(
 		host => "192.168.1.241",
