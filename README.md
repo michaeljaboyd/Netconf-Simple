@@ -87,3 +87,8 @@ for my $cap (@caps)
 print "$cap\n";
 }
 ```
+## get_message_id
+returns the message_id and increments the value ready for the next retrevial. 
+```
+my $num = $conn->get_message_id( );
+```
