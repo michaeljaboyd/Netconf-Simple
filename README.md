@@ -58,7 +58,7 @@ format xml into pretty format. use for debugging. Be careful sending xml to netc
 print "###RECIEVED##\n" . $conn->ppxml($res);
 ```
 ## xml_from_mt_template
-use Mojo::Template file to create XML. messageid passed as $message_id to template. data can be passed as a data structure using $data. 
+use Mojo::Template file to create XML. messageid passed as $message_id to template, the message_id will be auto-incremented upon xml_from_mt_template sub-routine call. data can be passed as a data structure using $data. 
 ```
 my $xml_to_send = $conn->xml_from_mt_template('templates/hello.mt');
 ```
