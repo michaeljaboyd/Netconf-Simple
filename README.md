@@ -8,6 +8,8 @@ I wanted a perl option to send/recieve raw XML to a netconf enabled device. This
 # Usage
 Install required packages for dependancies 
 apt get instal libnet-ssh2-perl libxml-libxml-perl libmojolicious-perl
+Then copy this folder 
+Templates do not have to be used. Modules such as XML::Writer can also be used. 
 
 # Methods
 
