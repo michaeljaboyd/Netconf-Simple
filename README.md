@@ -39,7 +39,7 @@ ssh subsystem (optional). Defaults to "netconf" if unspecified
 #### terminator
 EOF terminator for communactions (optional). Defaults to ']]>]]>' if unspecified 
 #### message_id
-message id start number
+message id start number (optional).  Defaults to 100 if unspecified 
 
 
 ## send
